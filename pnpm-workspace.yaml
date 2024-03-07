@@ -1,4 +1,4 @@
 packages:
   - ./apps/*
   - ./packages/*
-  - ./packages/mailer/.react-email
+#  - ./packages/mailer/.react-email

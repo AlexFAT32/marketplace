@@ -23,7 +23,6 @@ const App: FC<AppProps> = ({ Component, pageProps }) => (
       <MantineProvider theme={theme}>
         <ModalsProvider>
           <Notifications autoClose={10000} />
-
           <PageConfig>
             <Component {...pageProps} />
           </PageConfig>

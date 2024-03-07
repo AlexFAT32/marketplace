@@ -60,6 +60,8 @@ const Home: NextPage = () => {
     }));
   }, []);
 
+  // console.log("temp : ", temp)
+
   const handleFilter = useCallback(([sinceDate, dueDate]: DatesRangeValue) => {
     setFilterDate([sinceDate, dueDate]);
 

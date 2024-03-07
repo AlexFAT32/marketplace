@@ -10,6 +10,8 @@ const service = db.createService<User>(DATABASE_DOCUMENTS.USERS, {
   schemaValidator: (obj) => userSchema.parseAsync(obj),
 });
 
+
+
 const updateLastRequest = (_id: string) => {
   return service.atomic.updateOne(
     { _id },

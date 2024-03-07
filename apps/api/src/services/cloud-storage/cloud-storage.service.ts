@@ -23,6 +23,7 @@ const client = new S3Client({
     secretAccessKey: config.CLOUD_STORAGE_SECRET_ACCESS_KEY ?? '',
   },
 });
+
 const Bucket = config.CLOUD_STORAGE_BUCKET;
 
 const upload = (fileName: string, file: File): Promise<CompleteMultipartUploadOutput> => {

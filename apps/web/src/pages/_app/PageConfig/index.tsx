@@ -43,6 +43,8 @@ const PageConfig: FC<PageConfigProps> = ({ children }) => {
   if (isAccountLoading) return null;
 
   const { scope, layout } = routesConfiguration[route as RoutePath] || {};
+  console.log('route', route);
+
   const Scope = scope ? scopeToComponent[scope] : Fragment;
   const Layout = layout ? layoutToComponent[layout] : Fragment;
 
