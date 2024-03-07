@@ -15,7 +15,6 @@ RUN pnpm install --ignore-scripts
 RUN pnpm turbo run build
 
 
-
 EXPOSE 3001
 
 #CMD ["/bin/sh","-c","ash"]
